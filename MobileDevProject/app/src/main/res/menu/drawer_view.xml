@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profiles"
+            android:icon="@drawable/profiles"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_address"
+            android:icon="@drawable/addresses"
+            android:title="@string/addresses" />
+        <item
+            android:id="@+id/nav_stores"
+            android:icon="@drawable/stores"
+            android:title="@string/stores" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/cart"
+            android:title="Your Cart" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/history"
+            android:title="Shopping History" />
+        <item
+            android:id="@+id/nav_cards"
+            android:icon="@drawable/creditcard"
+            android:title="@string/cards" />
+        <item
+            android:id="@+id/nav_refer"
+            android:icon="@drawable/referral"
+            android:title="Refer a Friend" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+</menu>

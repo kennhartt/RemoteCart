@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        tools:context=".OrderConfirmation">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar9"
+            android:layout_width="500dp"
+            android:layout_height="52dp"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <TextView
+            android:id="@+id/orderTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/confirmTitle"
+            android:textColor="@color/light_black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar9" />
+
+        <TextView
+            android:id="@+id/orderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/thankyouTxt"
+            android:textColor="@color/light_black"
+            android:textSize="16sp"
+            app:fontFamily="serif"
+            app:layout_constraintStart_toStartOf="@+id/orderTitle"
+            app:layout_constraintTop_toBottomOf="@+id/orderTitle" />
+
+        <TextView
+            android:id="@+id/filler1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/filler1"
+            android:textColor="@color/light_black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/orderTxt"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <TextView
+            android:id="@+id/filler7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/filler2"
+            android:textColor="@color/light_black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/orderNum"
+            app:layout_constraintTop_toBottomOf="@+id/orderNum" />
+
+        <TextView
+            android:id="@+id/orderNum"
+            android:layout_width="222dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/light_black"
+            app:layout_constraintStart_toStartOf="@+id/filler1"
+            app:layout_constraintTop_toBottomOf="@+id/filler1" />
+
+        <TextView
+            android:id="@+id/storeName"
+            android:layout_width="222dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/light_black"
+            app:layout_constraintStart_toStartOf="@+id/filler7"
+            app:layout_constraintTop_toBottomOf="@+id/filler7" />
+
+        <TextView
+            android:id="@+id/filler3"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/filler3"
+            android:textColor="@color/light_black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/storeName"
+            app:layout_constraintTop_toBottomOf="@+id/storeName" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="222dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/light_black"
+            app:layout_constraintStart_toStartOf="@+id/filler3"
+            app:layout_constraintTop_toBottomOf="@+id/filler3" />
+
+        <TextView
+            android:id="@+id/divider"
+            android:layout_width="321dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/light_black"
+            app:layout_constraintEnd_toEndOf="@+id/orderTxt"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/orderTxt"
+            app:layout_constraintTop_toBottomOf="@+id/orderTxt" />
+
+        <TextView
+            android:id="@+id/footer8"
+            android:layout_width="744dp"
+            android:layout_height="48dp"
+            android:background="@color/original1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_view" />
+
+</android.support.v4.widget.DrawerLayout>

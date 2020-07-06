@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StoreDetails" >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar8"
+            android:layout_width="500dp"
+            android:layout_height="52dp"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <Button
+            android:id="@+id/useBtn"
+            android:layout_width="363dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/currentLoc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar8" />
+
+        <Button
+            android:id="@+id/searchBtn"
+            android:layout_width="205dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:text="@string/search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/province" />
+
+        <EditText
+            android:id="@+id/aptNumb"
+            android:layout_width="320dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/apt"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/useBtn"
+            app:layout_constraintTop_toBottomOf="@+id/useBtn"
+            tools:ignore="autofill" />
+
+        <EditText
+            android:id="@+id/street"
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/street"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/aptNumb"
+            app:layout_constraintTop_toBottomOf="@+id/aptNumb"
+            tools:ignore="autofill" />
+
+        <EditText
+            android:id="@+id/zipCode"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/zip"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/street"
+            app:layout_constraintTop_toBottomOf="@+id/street"
+            tools:ignore="autofill" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/city"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/zipCode"
+            app:layout_constraintTop_toBottomOf="@+id/zipCode"
+            tools:ignore="autofill" />
+
+        <EditText
+            android:id="@+id/province"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/province"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/city"
+            app:layout_constraintTop_toBottomOf="@+id/city"
+            tools:ignore="autofill" />
+
+        <TextView
+            android:id="@+id/Footer"
+            android:layout_width="744dp"
+            android:layout_height="48dp"
+            android:background="@color/original1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_view"
+        app:headerLayout="@layout/nav_header"/>
+
+</android.support.v4.widget.DrawerLayout>

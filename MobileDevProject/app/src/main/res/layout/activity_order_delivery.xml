@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        tools:context=".OrderDelivery">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar4"
+            android:layout_width="500dp"
+            android:layout_height="52dp"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <TextView
+            android:id="@+id/footer3"
+            android:layout_width="744dp"
+            android:layout_height="48dp"
+            android:background="@color/original1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.081"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/storeName"
+            android:layout_width="334dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:gravity="center_vertical"
+            android:text="@string/strName"
+            android:textColor="@color/light_black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+        <TextView
+            android:id="@+id/delOption"
+            android:layout_width="334dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/delOption"
+            android:textColor="@color/light_black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.022"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price" />
+
+        <TextView
+            android:id="@+id/finalPrice"
+            android:layout_width="300dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/light_black"
+            app:layout_constraintStart_toStartOf="@+id/discount"
+            app:layout_constraintTop_toBottomOf="@+id/discount" />
+
+        <TextView
+            android:id="@+id/totalText"
+            android:layout_width="68dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="8dp"
+            android:text="Total Price"
+            android:textColor="@color/light_black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orderList" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="217dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:text="Price"
+            android:textColor="@color/light_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toEndOf="@+id/totalText"
+            app:layout_constraintTop_toTopOf="@+id/totalText" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="183dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/delOption"
+            app:layout_constraintTop_toBottomOf="@+id/delOption">
+
+            <RadioButton
+                android:id="@+id/delivery"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/delivery" />
+
+            <RadioButton
+                android:id="@+id/pickup"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/pickup" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/purchaseBtn"
+            android:layout_width="144dp"
+            android:layout_height="39dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/purchaseText"
+            app:layout_constraintEnd_toEndOf="@+id/finalPrice"
+            app:layout_constraintHorizontal_bias="0.612"
+            app:layout_constraintStart_toStartOf="@+id/finalPrice"
+            app:layout_constraintTop_toBottomOf="@+id/finalPrice" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/orderList"
+            android:layout_width="321dp"
+            android:layout_height="133dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border"
+            app:layout_constraintEnd_toEndOf="@+id/storeName"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/storeName"
+            app:layout_constraintTop_toBottomOf="@+id/storeName" />
+
+        <TextView
+            android:id="@+id/fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/fee"
+            android:textColor="@color/light_black"
+            app:fontFamily="serif"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/light_black"
+            app:layout_constraintStart_toStartOf="@+id/radioGroup"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_view"
+        app:headerLayout="@layout/nav_header"/>
+
+</android.support.v4.widget.DrawerLayout>

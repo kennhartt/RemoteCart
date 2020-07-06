@@ -1,0 +1,112 @@
+<resources>
+
+    //main activity
+    <string name="app_name">RemoteCart</string>
+    <string name="title">Welcome</string>
+    <string name="email">E-mail Address</string>
+    <string name="password">Password</string>
+    <string name="register">New User? Sign Up Here!</string>
+    <string name="signIn">Sign In</string>
+    <string name="imgDesc">RemoteCart</string>
+
+    //registration activity
+    <string name="RegTitle">Registration</string>
+    <string name="signUp">Sign Up</string>
+    <string name="Conpassword">Confirm Password</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="referID">Referral ID</string>
+
+    //store details activity
+    <string name="StoreDet">Add Address</string>
+    <string name="currentLoc">Use Current Location</string>
+    <string name="search">Add Address</string>
+    <string name="apt">Apt Number</string>
+    <string name="street">Street</string>
+    <string name="city">City</string>
+    <string name="province">Province</string>
+    <string name="zip">ZIP code</string>
+
+    //addCard activity
+    <string name="ccTitle">Credit Card Information</string>
+    <string name="cardNum">Card Number</string>
+    <string name="cardName">Name on Card</string>
+    <string name="ExpText">Expiration Date</string>
+    <string name="addText">Add Card</string>
+    <string name="cvcHint">CVC</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+
+    //cardChoice activity
+    <string name="choiceTitle">Choose Your Credit Card</string>
+
+    //cardDetails activity
+    <string name="ccDetails">Card Details</string>
+    <string name="expiredPopup">The Card has Expired</string>
+    <string name="removeBtn">Remove Card</string>
+    <string name="makeDefCard">Make Default Card</string>
+
+    //orderDelivery activity
+    <string name="orderTitle">Order and Delivery</string>
+    <string name="strName">Store Name</string>
+    <string name="delOption">Delivery Option:</string>
+    <string name="payText">Payment Method</string>
+    <string name="purchaseText">Purchase</string>
+    <string name="delivery">Delivery</string>
+    <string name="pickup">Pick-up</string>
+    <string name="fee">fee: +$3.50</string>
+
+    //passwordChange activity
+    <string name="passTitle">Change Your Password</string>
+    <string name="curPassword">Current Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPass">Confirm New Password</string>
+    <string name="confirmBtn">Confirm</string>
+
+    //payment activity
+    <string name="payTitle">Payment</string>
+
+    //profiles activity
+    <string name="profilesTitle">My Account</string>
+
+    //drawer screen
+    <string name="menu">RemoteCart</string>
+    <string name="profiles">My Account</string>
+    <string name="addresses">Addresses</string>
+    <string name="refer">Referral</string>
+    <string name="cards">Credit Cards</string>
+    <string name="stores">Stores</string>
+    <string name="credit_card_information">Credit Card Information</string>
+    <string name="logout">Sign out</string>
+
+    //itemInfo activity
+    <string name="remove">Remove</string>
+    <string name="add">Add</string>
+    <string name="itemDesc">Item</string>
+    <string name="minus">Minus</string>
+    <string name="plus">Plus</string>
+    <string name="quantity">Quantity</string>
+
+    //refer activity
+    <string name="refertitle1">Invite new Shoppers.</string>
+    <string name="refertitle2">Get $10 off.</string>
+    <string name="refertitle3">Send a Referral Code to your friends to earn $10 off on your next purchase</string>
+    <string name="referImg">Referral</string>
+
+    //orderConfirmation activity
+    <string name="confirmTitle">Order Received</string>
+    <string name="thankyouTxt">Thank you. Your order has been received</string>
+    <string name="filler1">Order Number:</string>
+    <string name="filler2">Store Name:</string>
+    <string name="filler3">Total:</string>
+    <string name="filler4">Payment Method:</string>
+
+
+    //Address
+    <string name="addAddress">Add New Address</string>
+
+    <string name="empty">Your cart is empty</string>
+
+
+</resources>
